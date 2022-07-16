@@ -16,7 +16,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 margin-top: ${p => `${p.theme.space[3]}px`};
-font-size: ${p => p.theme.fontSize.l}
+font-size: ${p => p.theme.fontSizes.l}
 `;
 
 export const Input = styled.input`

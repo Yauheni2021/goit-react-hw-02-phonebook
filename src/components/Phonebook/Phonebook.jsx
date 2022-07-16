@@ -6,7 +6,7 @@ import {
     Label,
     Input,
     Button,
-} from './Phonebook.styled'
+} from './Phonebook.styled';
 
 const INIT_VALUES = {
     number: '',

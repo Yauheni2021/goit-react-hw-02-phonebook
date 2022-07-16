@@ -1,25 +1,23 @@
 import { PropTypes } from "prop-types";
 import { Box } from "components/Box";
-import { ContactsListItem } from './ContactsItem'
+import { ContactListItem } from './ContactsItem'
 
-export const Contacts = ({ contacts, onRemoveContacts }) => {
-    return (
-        <Box as="ul" mt={4} width="100 %">
-            {contacts.map(({ id, name, number }) => {
-                return (
-                    <ContactsListItem
-                        key={id}
-                        id={id}
-                        name={name}
-                        number={number}
-                        onClick={onRemoveContacts}
-                    />
-                );
-            }
-            )}
-
-        </Box>
-    )
+export const Contacts = ({ contacts, onRemoveContact }) => {
+  return (
+    <Box as="ul" mt={4} width="100%">
+      {contacts.map(({ id, name, number }) => {
+        return (
+          <ContactListItem
+            key={id}
+            id={id}
+            name={name}
+            number={number}
+            onClick={onRemoveContact}
+          />
+        );
+      })}
+    </Box>
+  );
 };
 
 
