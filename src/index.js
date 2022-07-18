@@ -4,11 +4,11 @@ import { App } from 'components/App';
 import './index.css';
 import '../node_modules/modern-normalize/modern-normalize.css';
 import { ThemeProvider } from 'styled-components';
-import {theme} from './theme'
+import {Theme} from './Theme'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={Theme}>
       <App />
     </ThemeProvider>
   </React.StrictMode>
